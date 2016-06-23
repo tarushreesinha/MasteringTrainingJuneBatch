@@ -51,7 +51,7 @@ public class AccountTest {
 	
 	@Test(expected=com.cg.demo.exceptions.InvalidAccountException.class)
 	public void ifTheAccountNoIsInvalidSystemShouldThrowException() throws InvalidAccountException{
-		
+		when(repo.findById(1)).thenReturn(null);
 		service.showBalance(1);
 
 	}
