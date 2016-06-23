@@ -5,3 +5,9 @@ This is demo code.
 1. Identify test cases.
 2. Mock the repository object using Mockito
 3. Configure maven
+second line
+
+third line
+
+Adding next line.
+
