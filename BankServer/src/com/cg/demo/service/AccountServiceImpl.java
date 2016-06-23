@@ -44,13 +44,33 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public Account withdraw(int id, double amount) throws InvalidAccountException, InsufficientFundsException {
 		// TODO Auto-generated method stub
-		return null;
+		if(amount <=0){
+			throw new IllegalArgumentException();
+		}
+		Account a = repo.findById(id);
+		if(a==null){
+			throw new InvalidAccountException();
+		}
+		if(a.getBalance()<amount){
+			throw new InsufficientFundsException();
+		}
+		a.setBalance(a.getBalance()-amount);
+		return a;
 	}
 
 	@Override
 	public Account deposit(int id, double amount) throws InvalidAccountException {
 		// TODO Auto-generated method stub
-		return null;
+		
+		if(amount<=0){
+			throw new IllegalArgumentException();
+		}
+		Account a = repo.findById(id);
+		if(a==null){
+			throw new InvalidAccountException();
+		}
+		a.setBalance(a.getBalance()+amount);
+		return a;
 	}
 
 	
