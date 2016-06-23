@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cg.demo.test.AccountTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-06-23T11:32:08" hostname="LIN51002860A" time="0.271">
+  <properties/>
+  <testcase name="ifTheValidInfoIsPassedAccountShouldBeCreatedSuccessfully" classname="com.cg.demo.test.AccountTest" time="0.261"/>
+  <testcase name="ifTheAccountNoIsInvalidSystemShouldThrowException" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="ifTheAccountNoIsValidSystemShouldReturnAccountDetils" classname="com.cg.demo.test.AccountTest" time="0.0"/>
+  <testcase name="whenAccountNumberAndAmountIsValidWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
+  <testcase name="whenAccountNumberIsInvalidWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAmountIsGreaterThanBalanceWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAccountNumberIsInvalidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAmountPassedIsNegativeWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAccountNumberAndAmountIsValidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAmountPassedIsNegativeWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
+  <testcase name="accountShouldBeOpenedWithAtLeast500" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

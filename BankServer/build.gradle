@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'BankServer'
+version = '0.0.1-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "http://10.109.32.183:8081/nexus/content/groups/public" }
+}
+dependencies {
+    compile group: 'org.mockito', name: 'mockito-all', version:'1.10.19'
+    compile group: 'junit', name: 'junit', version:'4.4'
+}
