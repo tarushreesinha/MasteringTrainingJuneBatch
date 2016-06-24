@@ -1,63 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.demo.test.AccountTest" tests="11" skipped="0" failures="1" errors="0" timestamp="2016-06-24T10:29:45" hostname="LIN51002860A" time="0.151">
+<testsuite name="com.cg.demo.test.AccountTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-06-24T10:33:43" hostname="LIN51002860A" time="0.2">
   <properties/>
-  <testcase name="whenAccountNumberAndAmountIsValidWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.143"/>
-  <testcase name="ifTheAccountNoIsValidSystemShouldReturnAccountDetils" classname="com.cg.demo.test.AccountTest" time="0.0"/>
-  <testcase name="ifTheValidInfoIsPassedAccountShouldBeCreatedSuccessfully" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAccountNumberAndAmountIsValidWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.191"/>
+  <testcase name="ifTheAccountNoIsValidSystemShouldReturnAccountDetils" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="ifTheValidInfoIsPassedAccountShouldBeCreatedSuccessfully" classname="com.cg.demo.test.AccountTest" time="0.0"/>
   <testcase name="ifTheAccountNoIsInvalidSystemShouldThrowException" classname="com.cg.demo.test.AccountTest" time="0.0"/>
   <testcase name="accountShouldBeOpenedWithAtLeast500" classname="com.cg.demo.test.AccountTest" time="0.0"/>
   <testcase name="whenAccountNumberIsInvalidWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
   <testcase name="whenAmountIsGreaterThanBalanceWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
-  <testcase name="whenAccountNumberIsInvalidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
   <testcase name="whenAmountPassedIsNegativeWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
-  <testcase name="whenAccountNumberAndAmountIsValidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001">
-    <failure message="com.cg.demo.exceptions.InvalidAccountException" type="com.cg.demo.exceptions.InvalidAccountException">com.cg.demo.exceptions.InvalidAccountException
-	at com.cg.demo.service.AccountServiceImpl.deposit(AccountServiceImpl.java:70)
-	at com.cg.demo.test.AccountTest.whenAccountNumberAndAmountIsValidWhileDepositing(AccountTest.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:59)
-	at org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:98)
-	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:79)
-	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:87)
-	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:77)
-	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:42)
-	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:88)
-	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
-	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
-	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
-	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
-	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
-	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</failure>
-  </testcase>
+  <testcase name="whenAccountNumberIsInvalidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
+  <testcase name="whenAccountNumberAndAmountIsValidWhileDepositing" classname="com.cg.demo.test.AccountTest" time="0.001"/>
   <testcase name="whenAmountPassedIsNegativeWhileWithdrawing" classname="com.cg.demo.test.AccountTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
