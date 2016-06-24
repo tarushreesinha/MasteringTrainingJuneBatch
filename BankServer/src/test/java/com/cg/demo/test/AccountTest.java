@@ -116,10 +116,10 @@ public class AccountTest {
 
 	@Test
 	public void whenAccountNumberAndAmountIsValidWhileDepositing() throws InvalidAccountException{
-		Account a =new Account(1);
+		Account a =new Account(2);
 		a.setBalance(1000);
 		
-		when(repo.findById(1)).thenReturn(a);
+		when(repo.findById(2)).thenReturn(a);
 		
 		assertEquals(1500.0+"", service.deposit(1, 500).getBalance()+"");
 	}
